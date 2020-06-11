@@ -9,7 +9,7 @@ function map(array, func) {
 function reduce(array, func, start) {
     let accumulator = start
 
-    // This feels janky, pretty sure this is not the right way to do it.....
+    // This feels janky, pretty sure this is not the right way to do it..... apparently this is the right way accoring to learn docs
     let test = func(array[0], accumulator)
     if (isNaN(test)) {
         accumulator = 0
